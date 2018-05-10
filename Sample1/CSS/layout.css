@@ -1,0 +1,45 @@
+html {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	padding-left: 20px;
+	padding-right: 20px;
+	margin: 0;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.top-nav-logo-wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: 1px solid black;
+}
+
+.top-section-nav-wrapper {
+	border: 1px solid black;
+}
+
+.top-nav-label {
+	display: inline;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.top-section-logo-wrapper {
+	display: flex;
+	justify-content: center;
+	border: 1px solid black;
+	height: 90px;
+}
+
+.main-img-gallery-wrapper {
+	border: 1px solid black;
+	height: 200px;
+}
+
+.top-nav {
+	text-align: center;
+}
