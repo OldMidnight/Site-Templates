@@ -9,33 +9,137 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
 	<link rel="stylesheet" href="CSS/layout.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href=""/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="Javascript/animate.js"></script>
+	<script src="Javascript/main-gallery.js"></script>
 </head>
-
-<body>
-	<div class="top-nav-logo-wrapper">
-		<div class="top-section-logo-wrapper">
-			<div class="top-section-logo">
-				<h1>Clint Eastwood</h1>
-			</div>
+<body onload="showSlides()" onscroll="scrollResize()">
+<div class="top-nav-logo-wrapper">
+	<div id="top-nav-logo-alt-id" class="top-nav-logo-alt">
+		<div id="top-logo-alt-id" class="top-logo-alt">
+			<img src="Resources/Images/sample-avatar.png" class="miniavatar">
+			<b>Clint Eastwood</b>
 		</div>
-		<div class="top-section-nav-wrapper">
-			<nav class="top-section-nav">
-				<ul class="top-nav">
-					<li class="top-nav-label">label</li>
-					<li class="top-nav-label">label</li>
-					<li class="top-nav-label">label</li>
-					<li class="top-nav-label">label</li>
-					<li class="top-nav-label">label</li>
-				</ul>
-			</nav>
+		<div id="top-nav-alt-id" class="top-nav-alt">
+			<div id="top-nav-label-alt-id" class="top-nav-label-alt"><a href="#">Home</a></div>
+			<div id="top-nav-label-alt-id" class="top-nav-label-alt"><a href="#abt">About Me</a></div>
+			<div id="top-nav-label-alt-id" class="top-nav-label-alt"><a href="#mres">Resume</a></div>
+			<div id="top-nav-label-alt-id" class="top-nav-label-alt"><a href="#contact-me">Contact Me</a></div>
+		</div>
+	</div>
+	<div id="top-nav-logo-main-id" class="top-nav-logo-main">
+		<div id="top-logo-main-id" class="top-logo-main">
+			<img src="Resources/Images/sample-avatar.png" class="avatar">
+			<b>Clint Eastwood</b>
+		</div>
+			<div id="top-nav-main-id" class="top-nav-main">
+			<div id="top-nav-label-main-id" class="top-nav-label-main"><a href="#">Home</a></div>
+			<div id="top-nav-label-main-id" class="top-nav-label-main"><a href="#abt">About Me</a></div>
+			<div id="top-nav-label-main-id" class="top-nav-label-main"><a href="#mres">Resume</a></div>
+			<div id="top-nav-label-main-id" class="top-nav-label-main"><a href="#contact-me">Contact Me</a></div>
 		</div>
 	</div>
 	<div class="main-img-gallery-wrapper">
-		<div class="main-img-gal">
-			
+		<div class="main-img">
+			<div class="main-img-gal fade-img">
+				<img class="main-img" src="Resources/Images/forest.jpg">
+				<div class="main-img-gal-text">caption1</div>
+			</div>
+			<div class="main-img-gal fade-img">
+				<img class="main-img" src="Resources/Images/lake.jpg">
+				<div class="main-img-gal-text">caption2</div>
+			</div>
+			<div class="main-img-gal fade-img">
+				<img class="main-img" src="Resources/Images/mountain.jpg">
+				<div class="main-img-gal-text">caption3</div>
+			</div>
 		</div>
 	</div>
-</body>
+	<br>
+	<div style="text-align:center">
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+		<span class="dot"></span> 
+	</div>
+	<h2 id="abt" style="text-align:center">About Me</h2>
+	<div class="content-wrapper">
+		<div class="main-para">
+			<h3>Section 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+		</div>
+		<div class="main-para">
+			<h3>Section 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+		</div>
+		<div class="main-para">
+			<h3>Section 1</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. </p>
+		</div>
+	</div>
+	<div class="icon-bar">
+		<a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+		<a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+		<a href="#" class="google"><i class="fa fa-google"></i></a> 
+		<a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+	</div>
+	<div class="resume">
+		<h2 id="mres">Mini-Resume</h2>
+		<button class="project-btn">Experience</button>
+		<div class="project-panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
 
+		<button class="project-btn">Projects</button>
+		<div class="project-panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+
+		<button class="project-btn">Interests & Hobbies</button>
+		<div class="project-panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	
+		<button class="project-btn">Acheivements</button>
+		<div class="project-panel">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+		</div>
+	</div>
+	<h2 id="contact-me">Contact Me</h2>
+	<p style="text-align:center"><i>Contact me with one of the social media methods available on the left or use the form below to send an email.</i></p>
+	<div class="container">
+		<form action="https://formspree.io/-your-email-here-" method="post">
+		<label for="fname">First Name</label>
+		<input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+		<label for="lname">Last Name</label>
+		<input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+		<label for="country">Email Address</label>
+		<input type="email" id="contact-email" name="contact-email" placeholder="Your E-mail address...">
+
+		<label for="subject">Subject</label>
+		<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+		<input type="submit" value="Submit">
+		</form>
+	</div>
+	<script>
+		var acc = document.getElementsByClassName("project-btn");
+		var i;
+
+		for (i = 0; i < acc.length; i++) {
+		acc[i].addEventListener("click", function() {
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight){
+				panel.style.maxHeight = null;
+			} else {
+				panel.style.maxHeight = panel.scrollHeight + "px";
+				} 
+			});
+		}
+	</script>
+</body>
 </html>
